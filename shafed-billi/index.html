@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="VENOME">
+<meta name="description" content="Shafed Billi – a Discord music bot powered by Lavalink.">
+<title>Shafed Billi – Discord Music Bot</title>
+<link rel="icon" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Righteous&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="aurora" aria-hidden="true"></div><div id="wipe" aria-hidden="true"></div><div id="toast" role="status"></div>
+<nav aria-label="Main">
+<a class="brand" href="#home" data-go="home"><img src="assets/logo.webp" alt="Shafed Billi logo"><span>Shafed Billi</span></a>
+<div class="links" id="links"></div>
+<a class="btn" href="#invite" data-go="invite">Invite</a>
+</nav>
+<main id="app">
+<section class="page" id="p-home">
+<div class="hero rv"><img src="assets/banner.webp" alt="" fetchpriority="high"><div>
+<span class="chip">Discord music bot · powered by Lavalink</span>
+<h1>Music that <span class="grad">moves</span> with your server.</h1>
+<p>Interactive now-playing cards, six music sources, filters, favourites and automatic voice recovery – all inside Discord.</p>
+<div class="row"><a class="btn" href="#invite" data-go="invite">Add to Discord</a><a class="btn ghost" href="#commands" data-go="commands">Browse commands</a><a class="btn ghost" href="#features" data-go="features">Features</a></div></div></div>
+<div class="player rv" style="--i:2"><img src="assets/artwork.webp" alt="Now playing artwork"><div><b>Now playing</b><div class="eq" id="eq" aria-hidden="true"></div><div class="bar"><b></b></div><div class="ctl" id="ctl" aria-hidden="true"></div></div></div>
+<div class="stats rv" id="stats" style="--i:3"></div>
+<div class="grid sec" id="tiles"></div>
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+</section>
+<section class="page" id="p-features"><div class="head rv"><span class="chip">Features</span><h2>Everything a <span class="grad">music bot</span> should do.</h2><p>Built component-first, so every control lives right on the player card.</p></div><div class="grid" id="feat"></div></section>
+<section class="page" id="p-commands"><div class="head rv"><span class="chip">Commands</span><h2>Prefix <span class="grad">and slash</span>.</h2><p>Every command works both ways. Search or filter by category.</p></div>
+<input type="search" id="q" placeholder="Search commands…" aria-label="Search commands"><div class="tabs" id="tabs"></div><div class="cmds" id="cmds"></div></section>
+<section class="page" id="p-music"><div class="head rv"><span class="chip">Sources &amp; setup</span><h2>Play from <span class="grad">anywhere</span>.</h2><p>Search support depends on the Lavalink plugins you run.</p></div>
+<div class="grid" id="src"></div><div class="head sec rv"><h2>Self-host in <span class="grad">minutes</span>.</h2></div><ol class="steps" id="steps"></ol></section>
+<section class="page" id="p-invite"><div class="center rv"><div class="ring"><img src="assets/logo.webp" alt="Shafed Billi"></div><h2>Bring <span class="grad">Shafed Billi</span> home.</h2><p style="color:var(--mut)">Pick a server, authorise, and press play. The bot asks only for what music needs.</p>
+<div class="perm" id="perm"></div><div class="row"><a class="btn" id="inv" href="#invite">Invite to your server</a><a class="btn ghost" href="#support" data-go="support">Need help?</a></div></div></section>
+<section class="page" id="p-support"><div class="head rv"><span class="chip">Support</span><h2>We’ve got your <span class="grad">back</span>.</h2><p>Questions, bug reports or self-hosting trouble – start here.</p></div><div class="grid" id="sup"></div></section>
+</main>
+<footer>Shafed Billi · Designed &amp; developed by <b>VENOME</b></footer>
+<script src="script.js"></script>
+</body>
+</html>
